@@ -1,0 +1,35 @@
+# Third-party notices
+
+## MyKgmWasm — KGM/KGMA decoder data and algorithm
+
+Repository: https://github.com/huangbao/MyKgmWasm  
+License: MIT  
+Copyright (c) 2025 huangbao
+
+The KGM/KGMA mask lookup tables and byte transformation used in `KgmDecoder.kt` are ported from this project. The relevant source files are `KgmUtils.h`, `KgmCodec.h`, and `KgmCodec.cpp`.
+
+MIT License
+
+Copyright (c) 2025 huangbao
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## NCM format research
+
+The NCM decoder in this project is an independent Kotlin implementation based on publicly documented container structure and algorithm descriptions. See https://github.com/taurusxin/ncmdump for a widely used open-source reference implementation and format history. No ncmdump binary or library is bundled.
