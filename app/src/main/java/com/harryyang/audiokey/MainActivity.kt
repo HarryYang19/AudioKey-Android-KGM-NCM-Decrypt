@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.provider.OpenableColumns
 import android.view.Gravity
 import android.view.View
+import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.ScrollView
@@ -60,7 +61,7 @@ class MainActivity : Activity() {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(22), dp(24), dp(22), dp(28))
         }
-        scroll.addView(column, ScrollView.LayoutParams(-1, -2))
+        scroll.addView(column, ViewGroup.LayoutParams(-1, -2))
         ViewCompat.setOnApplyWindowInsetsListener(scroll) { view, insets ->
             val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             view.setPadding(view.paddingLeft, bars.top, view.paddingRight, bars.bottom)
